@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="insert-into-db-user-profile" author="Elena">
+        <insert tableName="db_user_profile">
+            <column name="id" value="1138e632-98dd-11ee-b9d1-0242ac120002"/>
+            <column name="id_client" value="61f0c404-5cb3-11e7-907b-a6006ad3dba0"/>
+            <column name="password_encoded" value="$2a$10$teBfwK/XgvfczEmnqwAKz.FwEXqS1zO.h5/.84d.TwfkhU6rQbTF."/>
+            <column name="security_question" value="WHAT IS YOUR FAVORITE COLOR?"/>
+            <column name="security_answer" value="BLUE"/>
+            <column name="date_app_registration" value="2000-01-01 00:00:00"/>
+            <column name="fingerprint" value="190480184akfl24l"/>
+            <column name="user_authorization" value="PINCODE"/>
+        </insert>
+
+        <insert tableName="db_user_profile">
+            <column name="id" value="c664053c-3497-4298-ad3d-21f597903d36"/>
+            <column name="id_client" value="123e4567-e89b-12d3-a456-426655440000"/>
+            <column name="password_encoded" value="$2a$10$teBfwK/XgvfczEmnqwAKz.FwEXqS1zO.h5/.84d.TwfkhU6rQbTF."/>
+            <column name="security_question" value="WHAT IS YOUR FAVORITE PET?"/>
+            <column name="security_answer" value="CAT"/>
+            <column name="date_app_registration" value="2010-01-01 00:00:00"/>
+            <column name="fingerprint" value="1904293580243sGDF3"/>
+            <column name="user_authorization" value="BIOMETRICS"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

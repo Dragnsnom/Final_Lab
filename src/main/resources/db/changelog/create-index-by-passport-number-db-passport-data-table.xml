@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="create-index-by-passport-number-db-passport-data" author="vladimir_marzuev">
+        <createIndex indexName="idx_db_passport_data_on_identification_passport_number"
+                     unique="true"
+                     tableName="db_passport_data">
+            <column name="identification_passport_number" type="varchar(255)"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="create-index-by-client-id-db-contacts-table" author="evgeniy_kononov">
+        <createIndex indexName="idx_db_contacts_on_id_client"
+                     unique="true"
+                     tableName="db_contacts">
+            <column name="id_client" type="uuid"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

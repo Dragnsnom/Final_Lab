@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="create-table-db-user-profile" author="Elena">
+        <createTable tableName="db_user_profile">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="id_client" type="uuid">
+                <constraints foreignKeyName="fk_user_profile_client_user_profile"
+                             references="db_client(id)"
+                             nullable="false"/>
+            </column>
+            <column name="password_encoded" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="security_question" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="security_answer" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_app_registration" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="fingerprint" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="user_authorization" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="create-table-db-passport-data" author="Elena">
+        <createTable tableName="db_passport_data">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="id_client" type="uuid">
+                <constraints foreignKeyName="fk_user_profile_client_passport_data"
+                             references="db_client(id)"
+                             nullable="false"/>
+            </column>
+            <column name="identification_passport_number" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="issuance_date" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="place_of_issue" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expiry_date" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="nationality" type="varchar(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="birth_date" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

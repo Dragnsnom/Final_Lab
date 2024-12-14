@@ -1,0 +1,4 @@
+include:
+  - project: 'laboratory/a-sber/gitlab-scripts'
+    ref: 'main'
+    file: 'pipeline/inactive/user-service.yml'

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="insert-into-db-contacts" author="Elena">
+        <insert tableName="db_contacts">
+            <column name="id" value="1138e1c8-98dd-11ee-b9d1-0242ac120002"/>
+            <column name="id_client" value="61f0c404-5cb3-11e7-907b-a6006ad3dba0"/>
+            <column name="sms_notification_enable" value="true"/>
+            <column name="push_notification_enable" value="true"/>
+            <column name="email_notification_enable" value="false"/>
+            <column name="email" value="t.andreeva@mail.ru"/>
+            <column name="mobile_phone" value="79370458234"/>
+        </insert>
+
+        <insert tableName="db_contacts">
+            <column name="id" value="e1e344d0-9a6d-11ee-b9d1-0242ac120002"/>
+            <column name="id_client" value="123e4567-e89b-12d3-a456-426655440000"/>
+            <column name="sms_notification_enable" value="false"/>
+            <column name="push_notification_enable" value="true"/>
+            <column name="email_notification_enable" value="false"/>
+            <column name="email" value="a.petrov@mail.ru"/>
+            <column name="mobile_phone" value="79279348456"/>
+        </insert>
+
+        <insert tableName="db_contacts">
+            <column name="id" value="63285990-9a6e-11ee-b9d1-0242ac120002"/>
+            <column name="id_client" value="f8cc71da-9a6d-11ee-b9d1-0242ac120002"/>
+            <column name="sms_notification_enable" value="false"/>
+            <column name="push_notification_enable" value="true"/>
+            <column name="email_notification_enable" value="false"/>
+            <column name="email" value="a.mitishev@mail.ru"/>
+            <column name="mobile_phone" value="79225347856"/>
+        </insert>
+
+        <insert tableName="db_contacts">
+            <column name="id" value="6bdac6d6-9a6e-11ee-b9d1-0242ac120002"/>
+            <column name="id_client" value="178331c2-9a6e-11ee-b9d1-0242ac120002"/>
+            <column name="sms_notification_enable" value="false"/>
+            <column name="push_notification_enable" value="true"/>
+            <column name="email_notification_enable" value="false"/>
+            <column name="email" value="p.obhodov@mail.ru"/>
+            <column name="mobile_phone" value="79287348976"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

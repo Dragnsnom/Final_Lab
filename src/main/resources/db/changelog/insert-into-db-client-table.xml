@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="insert-into-db-client" author="Elena">
+        <insert tableName="db_client">
+            <column name="id" value="61f0c404-5cb3-11e7-907b-a6006ad3dba0"/>
+            <column name="first_name" value="Татьяна"/>
+            <column name="last_name" value="Андреева"/>
+            <column name="sur_name" value="Николаевна"/>
+            <column name="country_of_residence" value="Russian Federation"/>
+            <column name="date_accession" value="2021-11-13"/>
+            <column name="client_status" value="ACTIVE"/>
+        </insert>
+
+        <insert tableName="db_client">
+            <column name="id" value="123e4567-e89b-12d3-a456-426655440000"/>
+            <column name="first_name" value="Анатолий"/>
+            <column name="last_name" value="Петров"/>
+            <column name="sur_name" value="Сергеевич"/>
+            <column name="country_of_residence" value="Russian Federation"/>
+            <column name="date_accession" value="2022-01-08"/>
+            <column name="client_status" value="NOT_ACTIVE"/>
+        </insert>
+
+        <insert tableName="db_client">
+            <column name="id" value="f8cc71da-9a6d-11ee-b9d1-0242ac120002"/>
+            <column name="first_name" value="Алексей"/>
+            <column name="last_name" value="Мытищев"/>
+            <column name="sur_name" value="Артурович"/>
+            <column name="country_of_residence" value="Russian Federation"/>
+            <column name="date_accession" value="2023-01-08"/>
+            <column name="client_status" value="NOT_ACTIVE"/>
+        </insert>
+
+        <insert tableName="db_client">
+            <column name="id" value="178331c2-9a6e-11ee-b9d1-0242ac120002"/>
+            <column name="first_name" value="Петр"/>
+            <column name="last_name" value="Обходов"/>
+            <column name="sur_name" value="Максимович"/>
+            <column name="country_of_residence" value="Russian Federation"/>
+            <column name="date_accession" value="2023-03-10"/>
+            <column name="client_status" value="NOT_ACTIVE"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

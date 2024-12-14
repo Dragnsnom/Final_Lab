@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="create-table-db-client" author="Elena">
+        <createTable tableName="db_client">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sur_name" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="country_of_residence" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_accession" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="client_status" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

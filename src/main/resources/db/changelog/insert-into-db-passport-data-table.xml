@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="insert-into-db-passport-data" author="Elena">
+        <insert tableName="db_passport_data">
+            <column name="id" value="1138e510-98dd-11ee-b9d1-0242ac120002"/>
+            <column name="id_client" value="61f0c404-5cb3-11e7-907b-a6006ad3dba0"/>
+            <column name="identification_passport_number" value="23440123M"/>
+            <column name="issuance_date" value="2000-01-01"/>
+            <column name="place_of_issue" value="Moscow"/>
+            <column name="expiry_date" value="2010-01-01"/>
+            <column name="nationality" value="RUSSIAN"/>
+            <column name="birth_date" value="1980-01-01"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
